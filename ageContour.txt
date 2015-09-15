@@ -1,0 +1,43 @@
+#include "FrameWienerPredictor.h"
+
+extern "C"
+{
+#include "cv.h"
+#include "highgui.h"
+#include <stdio.h>
+}
+
+#include <iostream>
+using namespace std;
+
+int main( int argc, char** argv )
+{
+	CvCapture * capture;
+    IplImage* frame = NULL;
+    int i=0;
+	        	
+	capture = cvCaptureFromFile("/home/vanag/MYPLAYER/bin/museum.avi");
+	cvNamedWindow("Museum",0);
+    
+	i=0;
+	for(;;)
+    {       
+        frame = cvQueryFrame(capture);
+
+		cvResizeWindow("Museum",frame->width,frame->height);
+        if(frame == NULL)
+        {
+        	 printf("Frame is NULL !!!");
+        	 break;
+        }
+ 
+		cvShowImage("Museum",frame);
+        printf("Frame number %d \n",i);
+        printf("Dims %d %d \n",frame->width,frame->height);        
+    	i++;
+    }	
+    	
+    cvReleaseCapture(&capture);
+	cvDestroyWindow("Museum");
+    return 0;
+}

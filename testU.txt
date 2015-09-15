@@ -1,0 +1,44 @@
+
+extern "C"
+{
+#include "cv.h"
+#include "highgui.h"
+}
+
+#include <iostream>
+using namespace std;
+
+int main( int argc, char** argv )
+{
+	CvCapture * capture;
+    IplImage* frame = NULL;
+    char c;
+        	
+	capture = cvCaptureFromFile("/home/vanag/MYPLAYER/bin/museum.avi");
+	cvNamedWindow( "Museum",1);
+	
+	for(;;)
+    {
+
+        frame = cvQueryFrame( capture );
+                
+        if(frame == NULL)
+        {
+        	 cout << "Shit !!!";
+        	 break;
+        }
+        
+        cout << "Frame size ";
+        cout << frame->imageSize;
+    	cvShowImage( "Museum", frame);
+
+    	cout << "Continue? yes [y] or no [n]"; 
+    	cin >> c;   	
+    	if(c=='n') break;
+    }	
+    	
+    cvReleaseCapture( &capture );
+	cvDestroyWindow("Museum");
+
+    return 0;
+}

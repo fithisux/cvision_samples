@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cvsample - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\FITHIS\LOCALS~1\Temp\RSP36.tmp" with contents
+[
+/nologo /MLd /W4 /Gm /GX /Zi /Od /I "../../cxcore/include" /I "../../cv/include" /I "../../otherlibs/highgui" /I "../src" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"..\..\_temp\cvsample_Dbg/cvsample.pch" /YX /Fo"..\..\_temp\cvsample_Dbg/" /Fd"..\..\_temp\cvsample_Dbg/" /FD /GZ /c 
+"C:\Program Files\OpenCV\Research\Background\mytester.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\FITHIS\LOCALS~1\Temp\RSP36.tmp" 
+<h3>Output Window</h3>
+Compiling...
+mytester.cpp
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xmemory(39) : warning C4100: '_P' : unreferenced formal parameter
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xmemory(41) : warning C4100: '_P' : unreferenced formal parameter
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(242) : warning C4511: 'codecvt_base' : copy constructor could not be generated
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(223) : see declaration of 'codecvt_base'
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(242) : warning C4512: 'codecvt_base' : assignment operator could not be generated
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(223) : see declaration of 'codecvt_base'
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(296) : warning C4663: C++ language change: to explicitly specialize class template 'codecvt' use the following syntax:
+        template<> class codecvt<unsigned short,char,int> ...
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(398) : warning C4511: 'codecvt<unsigned short,char,int>' : copy constructor could not be generated
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(296) : see declaration of 'codecvt<unsigned short,char,int>'
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(398) : warning C4512: 'codecvt<unsigned short,char,int>' : assignment operator could not be generated
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(296) : see declaration of 'codecvt<unsigned short,char,int>'
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(387) : warning C4018: '<' : signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(420) : warning C4511: 'ctype_base' : copy constructor could not be generated
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(410) : see declaration of 'ctype_base'
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(420) : warning C4512: 'ctype_base' : assignment operator could not be generated
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(410) : see declaration of 'ctype_base'
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(519) : warning C4663: C++ language change: to explicitly specialize class template 'ctype' use the following syntax:
+        template<> class ctype<char> ...
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(611) : warning C4511: 'ctype<char>' : copy constructor could not be generated
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(519) : see declaration of 'ctype<char>'
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(611) : warning C4512: 'ctype<char>' : assignment operator could not be generated
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(519) : see declaration of 'ctype<char>'
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(552) : warning C4100: '_D' : unreferenced formal parameter
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(554) : warning C4100: '_D' : unreferenced formal parameter
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(50) : warning C4512: 'sentry' : assignment operator could not be generated
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(38) : see declaration of 'sentry'
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(373) : see reference to class template instantiation 'std::basic_ostream<char,struct std::char_traits<char> >' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(50) : warning C4512: 'sentry' : assignment operator could not be generated
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(38) : see declaration of 'sentry'
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(379) : see reference to class template instantiation 'std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(513) : warning C4511: 'ctype<unsigned short>' : copy constructor could not be generated
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(573) : see reference to class template instantiation 'std::ctype<unsigned short>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xlocale(513) : warning C4512: 'ctype<unsigned short>' : assignment operator could not be generated
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(573) : see reference to class template instantiation 'std::ctype<unsigned short>' being compiled
+C:\Program Files\OpenCV\Research\Background\mytester.cpp(146) : warning C4244: 'initializing' : conversion from 'int' to 'char', possible loss of data
+C:\Program Files\OpenCV\Research\Background\mytester.cpp(11) : warning C4100: 'argv' : unreferenced formal parameter
+C:\Program Files\OpenCV\Research\Background\mytester.cpp(11) : warning C4100: 'argc' : unreferenced formal parameter
+C:\Program Files\OpenCV\Research\Background\mytester.cpp(40) : warning C4101: 'pp2' : unreferenced local variable
+C:\Program Files\OpenCV\Research\Background\mytester.cpp(42) : warning C4101: 'counter' : unreferenced local variable
+C:\Program Files\OpenCV\Research\Background\mytester.cpp(146) : warning C4189: 'c' : local variable is initialized but not referenced
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\streambuf(181) : warning C4100: '_Loc' : unreferenced formal parameter
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\streambuf(182) : while compiling class-template member function 'void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::imbue(const class std::locale &)'
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\streambuf(181) : warning C4100: '_Loc' : unreferenced formal parameter
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\streambuf(182) : while compiling class-template member function 'void __thiscall std::basic_streambuf<unsigned short,struct std::char_traits<unsigned short> >::imbue(const class std::locale &)'
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(600) : warning C4245: 'initializing' : conversion from 'const int' to 'const unsigned int', signed/unsigned mismatch
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xmemory(59) : while compiling class-template static data member 'const unsigned int std::basic_string<char,std::char_traits<char>,std::allocator<char> >::npos'
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(291) : warning C4018: '<=' : signed/unsigned mismatch
+        C:\Program Files\OpenCV\Research\Background\mytester.cpp(89) : see reference to function template instantiation 'class std::basic_ostream<char,struct std::char_traits<char> > &__cdecl std::operator <<(class std::basic_ostream<char,struct std::char_traits<char> > &,const char *)' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(305) : warning C4018: '!=' : signed/unsigned mismatch
+        C:\Program Files\OpenCV\Research\Background\mytester.cpp(89) : see reference to function template instantiation 'class std::basic_ostream<char,struct std::char_traits<char> > &__cdecl std::operator <<(class std::basic_ostream<char,struct std::char_traits<char> > &,const char *)' being compiled
+C:\Program Files\OpenCV\Research\Background\mytester.cpp(107) : warning C4701: local variable 'temp_for' may be used without having been initialized
+
+
+
+<h3>Results</h3>
+mytester.obj - 0 error(s), 31 warning(s)
+</pre>
+</body>
+</html>
